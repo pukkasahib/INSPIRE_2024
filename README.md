@@ -3,4 +3,4 @@ INSPIRE program @ UTM, 2024
 
 Contained within are the data and notebooks for the program sessions. 
 
-Thank you to E. Klyshko for allowing me to borrow his old material and use it.
+*Shout-out to E. Klyshko for allowing me to take his old material and modify it for my own use.*
