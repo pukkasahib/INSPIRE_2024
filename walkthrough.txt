@@ -1,0 +1,41 @@
+BASIC INSTALLATION
+
+- https://www.anaconda.com/download/success -- Download for your operating system.
+	- skip registration -- it is not needed
+- follow the setup process. Keep all things as default, unless you really want to save your anaconda distribution to some special place.
+- search for 'anaconda prompt' on your computer.
+
+MAKING A VENV FOR PRACTICUM MODULES
+
+- make a folder in some directory and name it INSPIRE. 
+- navigate to that folder.
+- make a venv and notice where the environment will be stored: "environment location: C:\Users\wular\anaconda3\envs\inspire24"
+
+CREATE THE VIRTUAL ENVIRONMENT
+conda create --name inspire24 # create the conda env
+conda activate inspire24      # activate the conda env (note that the beginning of the prompt will have the env name)
+
+DOWNLOADING MODULES IN THE VENV
+conda install -c conda-forge openmm
+conda install -c conda-forge mdanalysis
+conda install -c conda-forge nglview
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=inspire24 # install this venv kernel
+
+USING THE NOTEBOOKS
+
+# cloning the github repository to the local folder so that we have everything
+- in the anaconda prompt, navigate to your inspire folder (if not already there)
+- git clone URLURL, where URLURL is taken from the github url (green code button)
+- verify that the github repository was downloaded to the local directory
+
+# open up a local instance of jupyter
+- we will use jupyter notebook since that is a good balance between having a pseudo presentation along with the code
+- open the anaconda navigator.
+- select to launch a jupyter notebook. the notebook will appear in a web browser.
+- navigate to your inspire folder and the sub-directory containing Eugene's lecture
+- open the jupyter notebook that contains the lecture
+- make sure that you've selected the inspire24 kernel for use in the notebook
+
+# download chimerax for visualization
+- navigate to, and download, ChimeraX (https://www.rbvi.ucsf.edu/chimerax/download.html) for molecular visualization.
